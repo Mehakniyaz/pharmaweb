@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 5rem rgba(0, 0, 0, 0.075);
+    padding: 3rem;
+  }
+  .nav a{
+    text-decoration: none;
+    color:#000000;
+    padding:0 0 0 15px
+  }
+  nav a:hover {
+    color: #2DA95c;
+    }
+  
+  @media (min-width: 992px) {
+    .copyRightWrapper {
+      display: inline-block;
+      vertical-align: middle;
+     
+    }
+    
+    .menuWrapper {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .copyRightWrapper {
+      margin-bottom: 20px;
+    }
+    
+    .menuWrapper {
+      margin-top: 20px;
+    }
+  }
+  .row{
+    display:flex;
+    justify-content: space-evenly;
+  }
+
+  .footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    margin:0;
+    margin-right:0px;
+    margin-left:0px
+  }
+  

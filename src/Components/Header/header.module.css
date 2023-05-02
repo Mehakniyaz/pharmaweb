@@ -1,0 +1,155 @@
+
+
+
+
+   .header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .logo{
+display:flex;
+justify-content: center;
+align-items: center;
+  }
+  .logo img {
+    height: 4rem;
+  }
+  Header nav ul li a:hover {
+    color: #2DA95c;
+    }
+  
+  .companyName {
+    font-size: 1.875rem;
+    margin-left: 0.5rem;
+   color: #2DA95c;
+
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin-left: 1rem;
+  }
+  
+  .nav a {
+    color: #033B4A;
+    text-decoration: none;
+  }
+  
+  .nav .dropdown {
+    position: relative;
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .dropdown:hover .dropdownContent {
+    display: block;
+  }
+  
+  .productListBtn {
+    background-color: #2DA95c;;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem 1.25rem;
+    cursor: pointer;
+  }
+  
+  .hamburgerMenu {
+    display: none;
+  }
+  
+  @media (max-width: 767px) {
+    .nav {
+      display: none;
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-color: #fff;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+  
+    .nav ul {
+      flex-direction: column;
+    }
+  
+    .nav li {
+      margin: 0;
+    }
+  
+    .nav a {
+      display: block;
+      padding: 1rem;
+    }
+  
+    .nav .dropdown {
+      position: static;
+    }
+  
+    .dropdownContent {
+      display: none;
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .dropdownContent  li button{
+        text-align: center;
+    }
+  
+    .dropdownContent a {
+      display: block;
+      padding: 0.5rem 1rem;
+    }
+  
+    .hamburgerMenu {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburgerMenu span {
+      display: block;
+      width: 2rem;
+      height: 0.25rem;
+      margin-bottom: 0.5rem;
+      background-color: #333;
+      border-radius: 0.125rem;
+    }
+  
+    .hamburgerMenu.open span:nth-of-type(1) {
+      transform: rotate(45deg) translate(0.5rem, 0.5rem);
+    }
+  
+    .hamburgerMenu.open span:nth-of-type(2) {
+      opacity: 0;
+    }
+  
+    .hamburgerMenu.open span:nth-of-type(3) {
+      transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+    }
+  }
+
+  .showMenu {
+    display: flex;
+  }
+  
